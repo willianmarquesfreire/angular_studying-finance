@@ -1,0 +1,13 @@
+a:hover {
+    cursor: pointer;
+}
+.sidenav {
+    background-color: #f1f1f1;
+    height: 100%;
+    margin-top: -20px;
+}
+@media screen and (max-width: 767px) {
+    .row .content {
+        height: auto;
+    }
+}
