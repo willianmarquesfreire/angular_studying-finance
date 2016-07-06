@@ -30,24 +30,15 @@
 </head>
 
 <body>
-
     <div ng-include="'views/header.html'"></div>
-    <div class="container-fluid">
-    <div class="row content">
-        <div class="col-sm-3 sidenav">
-            <h3> Relatórios</h3>
-            <ul class="nav nav-pills nav-stacked">
-                <li class="active"><a href="#/relatorio/geral">Relatório Geral</a></li>
-                <li><a href="#/relatorio/pessoas">Relatório de Pessoas</a></li>
-            </ul>
-        </div>
-
-        <div class="col-sm-9">
-            <div ng-view></div>
+    <div class="container-fluid application">
+        <div class="row content">
+            <div ng-include="'views/aside.html'"></div>
+            <div class="col-sm-9">
+                <div ng-view id="main"></div>
+            </div>
         </div>
     </div>
-    </div>
-
 </body>
 
 </html>

@@ -1,13 +1,42 @@
+html, body {
+    height: 100%;
+}
 a:hover {
     cursor: pointer;
+}
+.application {
+    height: 90%;
+    width: 100%;
+    margin-top: -20px;
+    position: fixed;
 }
 .sidenav {
     background-color: #f1f1f1;
     height: 100%;
-    margin-top: -20px;
+    position: fixed;
 }
-@media screen and (max-width: 767px) {
-    .row .content {
-        height: auto;
+#main {
+    height: 100%;
+    position: fixed;
+}
+
+@media screen and (max-width: 1000px) {
+    .sidenav {
+        display: none;
+    }
+    #main {
+        width: 97%;
+        left: 0px;
+        margin:0 2% 0 2%;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .sidenav {
+        display: block;
+        width: 15%;
+    }
+    #main {
+        width: 83%;
+        left: 16%;
     }
 }
